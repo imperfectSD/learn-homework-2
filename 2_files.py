@@ -28,7 +28,9 @@ def main():
 
             line = line.replace(".", "!")
             print(line)
-        
+
+            with open('referat2.txt', 'w', encoding='utf-8') as referat_new: 
+                referat_new.write(line)
 
 if __name__ == "__main__":
     main()
